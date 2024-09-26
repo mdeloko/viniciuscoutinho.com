@@ -1,0 +1,22 @@
+.pfp{
+    background-color: pink;
+    background-clip: border-box;
+    width:40dvh;
+    height:40dvh;
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+    border: solid black 2px;
+}
+#aboutme-title{
+    
+    position: static;
+    color: inherit;
+    place-self: center;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: dark){
+    .pfp{
+        border: solid white 4px;
+    }
+}

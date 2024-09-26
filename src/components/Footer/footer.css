@@ -1,0 +1,51 @@
+footer{
+    margin-top: auto;
+    background-color: var(--bg-footer);
+    width: 100dvw;
+    max-width: 100dvw;
+    min-height:17dvw;
+    text-align: center;
+    align-content: center;
+    padding: 0 var(--container-lateral);
+    font-size: 3.67dvw;
+    z-index: 999;
+}
+
+@media (prefers-color-scheme: light){
+    footer{
+        color: white;
+    }
+}
+
+/*Mobile*/
+@media (min-width:425px) and (orientation:portrait) {
+    footer{
+        min-height:8dvw;
+    }
+}
+@media (min-width:768px) and (orientation:portrait) {
+    footer{
+        min-height:6.5dvw;
+        font-size: 2.8dvw;
+    }
+}
+@media (min-width:1080px) and (orientation:portrait) {
+    footer{
+        min-height:7dvw;
+        font-size: 3.3dvw;
+    }
+}
+
+/* Desktops */
+@media (min-height:360px) and (orientation:landscape) {
+    footer{
+        min-height:5dvw;
+        font-size: 2dvw;
+    }
+}
+@media (min-height:720px) and (orientation:landscape) {
+    footer{
+        min-height:2.5dvw;
+        font-size: 1.15dvw;
+    }
+}

@@ -1,0 +1,158 @@
+#contacts{
+    margin-top: 5dvw;
+    margin-bottom: 5dvw;
+    max-width: 72dvw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: orangered solid 1px; */
+}
+#contacts-line{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap:5dvw;
+}
+#my-contacts-title{
+    margin-bottom: 2dvh;
+}
+#insta{
+    min-height:18dvw;
+    width: 18dvw;
+    background: var(--insta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+#whats{
+    min-height:18dvw;
+    width: 18dvw;
+    background: var(--whats);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+#insta-icon{
+    display: flex;
+    margin: auto;
+    color:white;
+    font-size: 14dvw;
+}
+#whats-icon{
+    display: flex;
+    margin: auto;
+    color: white;
+    font-size: 14dvw;
+}
+
+/*Mobile*/
+@media (min-width:425px) and (orientation:portrait) {
+    #insta{
+        min-height:16dvw;
+        width: 16dvw;
+    }
+    #insta-icon{
+        color:white;
+        font-size: 12dvw;
+    }
+    #whats{
+        min-height:16dvw;
+        width: 16dvw;
+    }
+    #whats-icon{
+        color: white;
+        font-size: 12dvw;
+    }
+    #contacts-line{
+        gap:5dvw;
+    }
+}
+@media (min-width:768px) and (orientation:portrait) {
+    #insta{
+        min-height:10dvw;
+        width: 10dvw;
+    }
+    #insta-icon{
+        font-size: 7.5dvw;
+    }
+    #whats{
+        min-height:10dvw;
+        width: 10dvw;
+    }
+    #whats-icon{
+        font-size: 7.5dvw;
+    }
+    #contacts-line{
+        gap:7dvw;
+    }
+}
+@media (min-width:1080px) and (orientation:portrait) {
+    #insta{
+        min-height:22dvw;
+        width: 22dvw;
+    }
+    #insta-icon{
+        font-size: 18dvw;
+    }
+    #whats{
+        min-height:22dvw;
+        width: 22dvw;
+    }
+    #whats-icon{
+        font-size: 18dvw;
+    }
+    #contacts-line{
+        gap:6dvw;
+    }
+    #my-contacts-title{
+        font-size: 8dvw;
+    }
+}
+
+/* Desktops */
+@media (min-height:360px) and (orientation:landscape) {
+    #my-contacts-title{
+        font-size: 4dvw;
+    }
+    #contacts-line{
+        gap:2dvw;
+    }
+    #insta{
+        border-radius: 1dvw;
+        min-height:5dvw;
+        width: 12dvw;
+    }
+    #insta-icon{
+        font-size: 4.6dvw;
+    }
+    #whats{
+        border-radius: 1dvw;
+        min-height:5dvw;
+        width: 12dvw;
+    }#whats-icon{
+        font-size: 4.6dvw;
+    }
+
+}
+@media (min-height:1440px) and (orientation:landscape) {
+    #my-contacts-title{
+        font-size: 5dvw;
+    }
+    #insta{
+        min-height:7dvw;
+        width: 16dvw;
+    }
+    #insta-icon{
+        font-size: 5.5dvw;
+    }
+    #whats{
+        min-height:7dvw;
+        width: 16dvw;
+    }#whats-icon{
+        font-size: 5.5dvw;
+    }
+}

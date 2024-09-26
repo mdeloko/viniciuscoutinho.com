@@ -1,0 +1,19 @@
+#foto{
+    background-clip: content-box;
+    filter:  blur(5px);
+    clip-path: fill-box;
+    padding: 0 var(--container-lateral);
+    width:100%;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+    height:40dvh;
+    background-color: yellow;
+    color:black;
+}
+#home-title{
+    color:black;
+    position: absolute;
+    top:10dvh;
+    left: 16.5dvw;
+}

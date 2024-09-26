@@ -1,11 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './globalVariables.css'
-import './index.css'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
-import Depoimentos from './pages/depoimentos';
-import Home from './pages/home';
-import AboutMe from './pages/aboutMe'
+
+import Opinions from './pages/Opinions/opinions';
+import Home from './pages/Home/home';
+import AboutMe from './pages/AboutMe/aboutme'
+import Photos from './pages/Photos/photos';
+
+import './globalVariables.css';
+import './index.css';
 
 const root = document.getElementById('root');
 const router = createBrowserRouter([
@@ -16,12 +19,16 @@ const router = createBrowserRouter([
   },
   {
     path:"/depoimentos",
-    element:<Depoimentos/>
+    element:<Opinions/>
   },
   {
     path:"/sobremim",
     element: <AboutMe/>
   },
+  {
+    path: "/fotos",
+    element:<Photos/>
+  }
 ]);
 if(root){
   createRoot(root).render(

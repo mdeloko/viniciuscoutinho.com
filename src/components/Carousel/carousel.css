@@ -1,0 +1,139 @@
+#carousel{
+    margin-top: 4dvh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95dvw;
+    height: 55dvw;
+}
+
+.slide{
+    border-radius: 2.5dvw;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide-hidden{
+    display: none;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    font-size:4.5dvw;
+}
+.arrow:hover{
+    opacity: 100%;
+}
+.arrow#left{
+    left: 0;
+    padding-left: 2dvw;
+}
+.arrow#right{
+    right:0;
+    padding-right: 2dvw;
+}
+
+.thumbs{
+    position: absolute;
+    padding: 1dvw;
+    bottom: -10dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 5dvw;
+    gap: 2dvw;
+    transition: all 0.5s ease-in-out;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+    scroll-margin: 0;
+    max-width: 95dvw;
+}
+
+.thumb{
+    width: 12dvw;
+    height: 7dvw;
+    border-radius: 0.4dvw;
+    cursor: pointer;
+    opacity: 100%;
+}  
+.thumb-inactive{
+    opacity: 45%;
+}
+
+/*Mobile*/
+@media (min-width:425px) and (orientation:portrait) {
+    
+}
+@media (min-width:768px) and (orientation:portrait) {
+    
+}
+@media (min-width:1080px) and (orientation:portrait) {
+    
+}
+
+/* Desktops */
+@media (min-height:360px) and (orientation:landscape) {
+    #carousel{
+        width: 72dvw;
+        height: 72dvh;
+        margin: 2dvw 0;
+    }
+    .thumbs{
+        padding: 0.5dvh;
+        bottom: 1dvh;
+        width: 40%;
+        gap: 0.5dvw;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 0.4dvw;
+        opacity:0%;
+        transition: all 0.5s ease-in-out;
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        scrollbar-color: white transparent;
+        scrollbar-gutter: stable;
+        scroll-behavior: smooth;
+        scroll-margin: 0;
+    }
+    
+    .thumbs:hover{
+        opacity:100%;
+    }
+    .thumb{
+        width: 4dvw;
+        height: 4dvh;
+        border-radius: 0.4dvw;
+        cursor: pointer;
+        opacity: 100%;
+    }  
+    .thumb-inactive{
+        opacity: 45%;
+    }
+}
+@media (min-height:720px) and (orientation:landscape) {
+    
+}
+@media (min-height:900px) and (orientation:landscape) {
+    
+}
+@media (min-height:1080px) and (orientation:landscape) {
+    
+}
+@media (min-height:1440px) and (orientation:landscape) {
+    
+}
+@media (min-height:2160px) and (orientation:landscape) {
+    
+}
