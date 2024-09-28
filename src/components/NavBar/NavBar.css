@@ -1,7 +1,7 @@
 nav{
-    width:100dvw;
-    max-width: 100dvw;
-    height: 24dvw;
+    width:100%;
+    max-width: 100%;
+    height: 5.7rem;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,10 +20,10 @@ nav{
     filter: drop-shadow(#000 0 0 3px);
 }
 #logo>#house{
-    font-size: 16dvw;
+    font-size: 4rem;
 }
 #logo>#title{
-    font-size: 6dvw;
+    font-size: 1.2rem;
 }
 
 
@@ -33,18 +33,19 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100dvh;
-    width: 100dvw;
+    height: 100vh;
+    width: 100vw;
     font-weight: 450;
     background-color: var(--bg-nav-rgba);
     backdrop-filter: blur(5px);
     position: absolute;
     right:0;
     gap:10dvh;
+    overflow-x: hidden;
 }
 .links-mobile a{
     padding: 1.5dvh 20dvw;
-    font-size: 2rem;
+    font-size: 2.7rem;
     filter: drop-shadow(0 0 5px #222);
 }
 .hidden{
@@ -58,7 +59,8 @@ nav{
     font-weight: 900;
     border: var(--hover) solid 1.5px;
     margin: auto 0;
-    padding: 1.5dvh;
+    font-size: 1.5rem;
+    padding: 0.48rem;
     border-radius: 2dvw;
     outline: none;
     transition: all 0.3s ease-in-out;
@@ -128,55 +130,56 @@ nav{
 }
 /*Mobile*/
 @media (min-width:425px) and (orientation:portrait) {
-    nav{
-        height: 20dvw;
-    }
     #menu-btn{
-        padding: 1.25dvh;
+        padding: 0.54rem;
     }
     #logo>#house{
-        font-size: 14dvw;
+        font-size: 4.8rem;
     }
     #logo>#title{
-        font-size: 5dvw;
+        font-size: 1.5rem;
     }
 }
 @media (min-width:600px) and (orientation:portrait) {
     nav{
-        height: 15dvw;
+        height: 7rem;
     }
-    .links-mobile{
-        width: 90dvw;
+    .links-mobile a{
+        font-size: 3.2rem;
     }
     #menu-btn{
-        padding: 1.25dvh;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    #close-btn{
+        font-size: 3.2rem;
     }
     #logo>#house{
-        font-size: 12dvw;
+        font-size: 6.8rem;
     }
     #logo>#title{
-        font-size: 4.5dvw;
+        font-size: 2.2rem;
     }
 }
 @media (min-width:768px) and (orientation:portrait) {
     nav{
-        height: 14dvw;
+        height: 6rem;
     }
     #logo>#house{
-        font-size: 8dvw;
+        font-size: 6.2rem;
     }
     #logo>#title{
-        font-size: 3dvw;
+        font-size: 2rem;
     }
     .links-mobile a{
-        font-size: 10dvw;
+        font-size: 3.5rem;
     }
     #menu-btn{
-        display: flex;
-        font-size: 4dvw;
+        font-size: 2.2rem;
+        padding: 1rem;
     }
     #close-btn{
-        font-size: 10dvw;
+        font-size: 3.5rem;
     }
     .links-desktop{
         display:none;
@@ -184,23 +187,24 @@ nav{
 }
 @media (min-width:1080px) and (orientation:portrait) {
     nav{
-        height: 20dvw;
+        height: 13rem;
     }
     #logo>#house{
-        font-size: 12dvw;
+        font-size: 14rem;
     }
     #logo>#title{
-        font-size: 4.5dvw;
+        font-size: 4.4rem;
     }
     .links-mobile a{
-        font-size: 10dvw;
+        font-size: 6.2rem;
     }
     #menu-btn{
-        display: flex;
-        font-size: 6dvw;
+        font-size: 4rem;
+        padding: 2rem;
+        border-width: 0.2rem;
     }
     #close-btn{
-        font-size: 6dvw;
+        font-size: 6.2rem;
     }
     .links-desktop{
         display:none;
@@ -210,16 +214,16 @@ nav{
 /* Desktops */
 @media (min-height:360px) and (orientation:landscape) {
     nav{
-        height: 7dvw;
+        height: 2.1rem;
     }
     #logo>#house{
-        font-size: 4dvw;
+        font-size: 1.8rem;
     }
     #logo>#title{
-        font-size: 0.8dvw;
+        font-size: 0.6rem;
     }
     .links-desktop a{
-        font-size: 2dvw;
+        font-size: 0.6rem;
     }
     #menu-btn{
         display: none;
@@ -230,16 +234,16 @@ nav{
 }
 @media (min-height:720px) and (orientation:landscape) {
     nav{
-        height: 5dvw;
+        height: 4rem;
     }
     #logo>#house{
-        font-size: 5dvw;
+        font-size: 4.2rem;
     }
     #logo>#title{
-        font-size: 1.6dvw;
+        font-size: 1.25rem;
     }
     .links-desktop a{
-        font-size: 1.6dvw;
+        font-size: 1.25rem;
     }
     #menu-btn{
         display: none;
@@ -250,13 +254,16 @@ nav{
 }
 @media (min-height:1080px) and (orientation:landscape) {
     nav{
-        height: 5dvw;
+        height: 6rem;
+    }
+    #logo{
+        gap:0.1dvw;
     }
     #logo>#house{
-        font-size: 5dvw;
+        font-size: 6.6rem;
     }
     #logo>#title{
-        font-size: 1.6dvw;
+        font-size: 1.95rem;
     }
     #menu-btn{
         display: none;
@@ -265,18 +272,18 @@ nav{
         display:grid;
     }
     .links-desktop a{
-        font-size: 1.4dvw;
+        font-size: 1.5rem;
     }
 }
 @media (min-height:1440px) and (orientation:landscape) {
     nav{
-        height: 5.5dvw;
+        height: 7rem;
     }
     #logo>#house{
-        font-size: 5dvw;
+        font-size: 7.6rem;
     }
     #logo>#title{
-        font-size: 1.6dvw;
+        font-size: 2.45rem;
     }
     #menu-btn{
         display: none;
@@ -285,6 +292,6 @@ nav{
         display:grid;
     }
     .links-desktop a{
-        font-size: 1.6dvw;
+        font-size: 2.2rem;
     }
 }

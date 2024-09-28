@@ -4,11 +4,10 @@
 
 :root{
     font-family: Roboto, system-ui, Arial, sans-serif;
-    font-size: 12pt;
     color-scheme: light dark;
-    --body-min-height:100dvh;
-    --container-lateral: 14dvw;
-    --container-vertical: 1dvh;
+    --body-min-height:100vh;
+    --container-lateral: 14vw;
+    --container-vertical: 1vh;
     --bg-light:#f2f2f2;
     --bg-nav:#1c5052;
     --bg-nav-rgba:rgba(28,80,82,0.9);

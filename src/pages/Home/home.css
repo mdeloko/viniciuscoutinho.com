@@ -1,19 +1,75 @@
 #foto{
     background-clip: content-box;
     filter:  blur(5px);
-    clip-path: fill-box;
-    padding: 0 var(--container-lateral);
+    clip-path: stroke-box;
     width:100%;
     align-content: center;
     text-align: center;
     text-justify: center;
-    height:40dvh;
+    height:30dvh;
     background-color: yellow;
     color:black;
 }
 #home-title{
     color:black;
     position: absolute;
-    top:10dvh;
-    left: 16.5dvw;
+    top:5rem;
+}
+/*Mobile*/
+@media (min-width:600px) and (orientation:portrait){
+    #home-title{
+        top: 6rem;
+    }
+}
+@media (min-width:768px) and (orientation:portrait){
+    #home-title{
+        top: 4rem;
+    }
+}
+@media (min-width:1080px) and (orientation:portrait){
+    #home-title{
+        top: 11rem;
+    }
+}
+/*Desktops*/
+@media (min-height:360px) and (orientation:landscape){
+    #foto{
+        clip-path: fill-box;
+        padding: 0 var(--container-lateral);
+        width:100%;
+        align-content: center;
+        text-align: center;
+        text-justify: center;
+        height:40dvh;
+        background-color: yellow;
+        color:black;
+    }
+    #home-title{
+        top: 2rem;
+        left: 5rem;
+    }
+}
+@media (min-height:720px) and (orientation:landscape) {
+    #home-title{
+        top: 4rem;
+        left:12rem;
+    }
+}
+@media (min-height:1080px) and (orientation:landscape) {
+    #home-title{
+        top: 6rem;
+        left:18rem;
+    }
+}
+@media (min-height:1440px) and (orientation:landscape) {
+    #home-title{
+        top: 7rem;
+        left: 20rem;
+    }
+}
+@media (min-height:2160px) and (orientation:landscape) {
+    #home-title{
+        top: 7rem;
+        left: 30rem;
+    }
 }

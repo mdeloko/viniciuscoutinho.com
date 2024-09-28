@@ -1,6 +1,5 @@
 #contacts{
-    margin-top: 5dvw;
-    margin-bottom: 5dvw;
+    margin: 3.5rem 0;
     max-width: 72dvw;
     display:flex;
     flex-direction: column;
@@ -107,9 +106,6 @@
     }
     #contacts-line{
         gap:6dvw;
-    }
-    #my-contacts-title{
-        font-size: 8dvw;
     }
 }
 

@@ -5,16 +5,16 @@ export default function Contacts(){
         <section id="contacts">
             <h2 id="my-contacts-title">Meus Contatos:</h2>
             <div id="contacts-line">
-                <span id="insta">
-                    <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                    <span id="insta">
                         <FaInstagram id="insta-icon"/>
-                    </a>
-                </span>
-                <span id="whats">
-                    <a href="https://wa.link/qwawm5" target="_blank" rel="noreferrer">
+                    </span>
+                </a>
+                <a href="https://wa.link/qwawm5" target="_blank" rel="noreferrer">
+                    <span id="whats">
                         <FaWhatsapp id="whats-icon"/>
-                    </a>
-                </span>
+                    </span>
+                </a>
             </div>
         </section>
     );

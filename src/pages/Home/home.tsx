@@ -8,8 +8,8 @@ export default function Home() {
 		<div className="App">
 			<NavBar />
 			<div id="foto">A</div>
+			<h1 id="home-title">Home</h1>
 			<div className="container">
-				<h1 id="home-title">Home</h1>
 				<p>
 					Confira o trabalho de um arquiteto autônomo a mais de xx anos no ramo!
 					Posso fazer projetos comerciais, residenciais e industriais!
