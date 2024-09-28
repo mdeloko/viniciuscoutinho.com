@@ -232,7 +232,7 @@ nav{
         display:grid;
     }
 }
-@media (min-height:720px) and (orientation:landscape) {
+@media (min-width:1024px) and (orientation:landscape) {
     nav{
         height: 4rem;
     }
@@ -252,7 +252,7 @@ nav{
         display:grid;
     }
 }
-@media (min-height:1080px) and (orientation:landscape) {
+@media (min-width:1920px) and (orientation:landscape) {
     nav{
         height: 6rem;
     }
@@ -275,7 +275,7 @@ nav{
         font-size: 1.5rem;
     }
 }
-@media (min-height:1440px) and (orientation:landscape) {
+@media (min-width:2160px) and (orientation:landscape) {
     nav{
         height: 7rem;
     }

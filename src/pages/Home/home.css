@@ -49,27 +49,27 @@
         left: 5rem;
     }
 }
-@media (min-height:720px) and (orientation:landscape) {
+@media (min-width:1024px) and (orientation:landscape) {
     #home-title{
         top: 4rem;
         left:12rem;
     }
 }
-@media (min-height:1080px) and (orientation:landscape) {
+@media (min-width:1920px) and (orientation:landscape) {
     #home-title{
         top: 6rem;
         left:18rem;
     }
 }
-@media (min-height:1440px) and (orientation:landscape) {
+@media (min-width:2560px) and (orientation:landscape) {
     #home-title{
         top: 7rem;
-        left: 20rem;
+        left: 23rem;
     }
 }
-@media (min-height:2160px) and (orientation:landscape) {
+@media (min-width:3840px) and (orientation:landscape) {
     #home-title{
         top: 7rem;
-        left: 30rem;
+        left: 34.5rem;
     }
 }

@@ -111,9 +111,6 @@
 
 /* Desktops */
 @media (min-height:360px) and (orientation:landscape) {
-    #my-contacts-title{
-        font-size: 4dvw;
-    }
     #contacts-line{
         gap:2dvw;
     }
@@ -132,12 +129,11 @@
     }#whats-icon{
         font-size: 4.6dvw;
     }
-
-}
-@media (min-height:1440px) and (orientation:landscape) {
-    #my-contacts-title{
-        font-size: 5dvw;
-    }
+  }
+  @media (min-width:1024px) and (orientation:landscape) {
+    
+  }
+  @media (min-width:2560px) and (orientation:landscape) {
     #insta{
         min-height:7dvw;
         width: 16dvw;
@@ -151,4 +147,7 @@
     }#whats-icon{
         font-size: 5.5dvw;
     }
-}
+  }
+  @media (min-width:3840px) and (orientation:landscape) {
+    
+  }
